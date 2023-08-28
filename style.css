@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #241e1e;
+}
+
+h1 {
+  font-size: 2.75rem; /* 44px */
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.625rem; /* 26px */
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+
+a {
+  color: #06aceb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Site header */
+header {
+  text-align: center;
+  background-color: #06aceb;
+}
+
+header a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1em 1.25em;
+}
+
+header a:hover {
+  color: #f7ef0a;
+}
+
+/* Hero section */
+.hero {
+  color: white;
+  text-align: center;
+  padding: 1.875em 0;
+  background: #000 url("images/space.jpg");
+  background-size: cover;
+  border-bottom: solid 8px #e6e9ea;
+}
+
+.hero span {
+  font-size: 1.375rem; /* 22px */
+}
+
+.featured-img {
+  width: 140px;
+  border: solid 2px #e6e9ea;
+  border-radius: 50%;
+}
+
+/* Main content container */
+.container {
+  padding: 1em 0;
+  width: 90%;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+/* Intro section */
+.intro {
+  margin-bottom: 2em;
+  border-bottom: dotted 1px #7e8494;
+}
+
+.intro p {
+  color: #7e8494;
+}
+
+/* Image container */
+.img-container img {
+  width: 100%;
+  border-radius: 0.3125em;
+  margin-bottom: 0.75em;
+}
+
+/* Site footer */
+footer {
+  text-align: center;
+  background-color: #241e1e;
+  padding: 1.5em 0;
+}
+
+footer a {
+  color: white;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem; /* 60px */
+  }
+
+  h2 {
+    font-size: 1.75rem; 
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+  }
+
+  .hero {
+    padding: 3.75em 0;
+  }
+
+  .container {
+    padding-top: 2.25em;
+  }
+
+  .img-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2.5em;
+  }
+
+  .img-container img {
+    width: 49%;
+    margin: 0;
+  }
+}
