@@ -1,0 +1,8 @@
+"customizations": {
+  "vscode": {
+    "extensions": [
+      "github.copilot",
+      "ms-vscode.live-preview"
+    ]
+  }
+}
