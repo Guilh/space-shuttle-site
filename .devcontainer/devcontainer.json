@@ -5,7 +5,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.live-preview",
+        "ms-vscode.live-server",
         "github.copilot"
       ]
     }
